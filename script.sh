@@ -2,8 +2,10 @@
 #Docker setup
 echo "------------Docker setup----------"
 sudo apt update && sudo apt-get install ca-certificates curl gnupg lsb-release -y
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-sudo service docker start
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+#sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+#sudo service docker start
 
 #MongoDB setup
 echo "------------MongoDB setup---------"
